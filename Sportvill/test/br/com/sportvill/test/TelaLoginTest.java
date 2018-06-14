@@ -5,7 +5,7 @@
  */
 package br.com.sportvill.test;
 import java.sql.*;
-import controleTeste.conexaoBDtest;
+import br.com.sportvill.test.DataBaseTest;
 
 import javax.swing.JOptionPane;
 
@@ -21,7 +21,7 @@ public class TelaLoginTest extends javax.swing.JFrame {
      * Creates new form TelaLoginTest
      */
     
-  conexaoBDtest con = new conexaoBDtest();
+  DataBaseTest con = new DataBaseTest();
     
     
     public TelaLoginTest() {

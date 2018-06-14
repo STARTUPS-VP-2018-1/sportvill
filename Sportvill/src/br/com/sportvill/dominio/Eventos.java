@@ -7,7 +7,6 @@ public class Eventos {
     private float data;
     private float horário;
     private String local;
-    private String administrador;
     private String nomeDoEvento;
 
     public float getData() {
@@ -34,14 +33,6 @@ public class Eventos {
         this.local = local;
     }
 
-    public String getAdministrador() {
-        return administrador;
-    }
-
-    public void setAdministrador(String administrador) {
-        this.administrador = administrador;
-    }
-
     public String getNomeDoEvento() {
         return nomeDoEvento;
     }
@@ -52,12 +43,11 @@ public class Eventos {
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 97 * hash + Float.floatToIntBits(this.data);
-        hash = 97 * hash + Float.floatToIntBits(this.horário);
-        hash = 97 * hash + Objects.hashCode(this.local);
-        hash = 97 * hash + Objects.hashCode(this.administrador);
-        hash = 97 * hash + Objects.hashCode(this.nomeDoEvento);
+        int hash = 3;
+        hash = 47 * hash + Float.floatToIntBits(this.data);
+        hash = 47 * hash + Float.floatToIntBits(this.horário);
+        hash = 47 * hash + Objects.hashCode(this.local);
+        hash = 47 * hash + Objects.hashCode(this.nomeDoEvento);
         return hash;
     }
 
@@ -82,15 +72,13 @@ public class Eventos {
         if (!Objects.equals(this.local, other.local)) {
             return false;
         }
-        if (!Objects.equals(this.administrador, other.administrador)) {
-            return false;
-        }
         if (!Objects.equals(this.nomeDoEvento, other.nomeDoEvento)) {
             return false;
         }
         return true;
     }
 
+   
     
     
     

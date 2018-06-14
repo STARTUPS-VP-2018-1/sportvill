@@ -6,8 +6,8 @@
 package br.com.sportvill.test;
 
 import br.com.sportvill.dominio.Cadastro;
-import controleTeste.conexaoBDtest;
-import br.com.sportvill.test.controleUsuario;
+import br.com.sportvill.test.DataBaseTest;
+import br.com.sportvill.test.CadastroBusinessMock;
 
 
 /**
@@ -18,8 +18,8 @@ public class TelaCadastroTest extends javax.swing.JFrame {
 
     
     Cadastro cad = new Cadastro();
-    controleUsuario control = new controleUsuario();
-    conexaoBDtest conectarBD = new conexaoBDtest();
+    CadastroBusinessMock control = new CadastroBusinessMock();
+    DataBaseTest conectarBD = new DataBaseTest();
     
     /**
      * Creates new form TelaCadastroTest
@@ -27,7 +27,7 @@ public class TelaCadastroTest extends javax.swing.JFrame {
     public TelaCadastroTest() {
         initComponents();
         
-        //Ao fazer isso, estará chamando todas as instruções da conexaoBDtest
+        //Ao fazer isso, estará chamando todas as instruções da DataBaseTest
         conectarBD.conexao();
         
     }

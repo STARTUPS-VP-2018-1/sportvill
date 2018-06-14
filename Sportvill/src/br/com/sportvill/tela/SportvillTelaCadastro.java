@@ -7,8 +7,8 @@ package br.com.sportvill.tela;
 
 
 import br.com.sportvill.dominio.Cadastro;
-import br.com.sportvill.BD.conexaoBD;
-import br.com.sportvill.BD.controleUsuario;
+import br.com.sportvill.repositorio.DataBase;
+import br.com.sportvill.business.CadastroBusiness;
 
 
 
@@ -20,8 +20,8 @@ public class SportvillTelaCadastro extends javax.swing.JFrame {
 
     
     Cadastro cad = new Cadastro();
-    controleUsuario control = new controleUsuario();
-    conexaoBD conectarBD = new conexaoBD();
+    CadastroBusiness control = new CadastroBusiness();
+    DataBase conectarBD = new DataBase();
     
     /**
      * Creates new form SportvillTelaCadastro
@@ -99,7 +99,7 @@ public class SportvillTelaCadastro extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/sportvill/tela/imagens/ping-pong (1).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/sportvill/tela/imagens/ping-pong .png"))); // NOI18N
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/sportvill/tela/imagens/muscle.png"))); // NOI18N
 

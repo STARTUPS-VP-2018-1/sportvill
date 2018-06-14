@@ -1,10 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package br.com.sportvill.dominio;
+
 import java.util.List;
 import java.util.Objects;
 
-
+/**
+ *
+ * @author kevin
+ */
 public class Cliente {
-    
     
     private int id;
     private String nome;
@@ -72,14 +80,14 @@ public class Cliente {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 97 * hash + this.id;
-        hash = 97 * hash + Objects.hashCode(this.nome);
-        hash = 97 * hash + this.idade;
-        hash = 97 * hash + this.altura;
-        hash = 97 * hash + (int) (Double.doubleToLongBits(this.peso) ^ (Double.doubleToLongBits(this.peso) >>> 32));
-        hash = 97 * hash + Objects.hashCode(this.telefones);
-        hash = 97 * hash + Objects.hashCode(this.emails);
+        int hash = 7;
+        hash = 79 * hash + this.id;
+        hash = 79 * hash + Objects.hashCode(this.nome);
+        hash = 79 * hash + this.idade;
+        hash = 79 * hash + this.altura;
+        hash = 79 * hash + (int) (Double.doubleToLongBits(this.peso) ^ (Double.doubleToLongBits(this.peso) >>> 32));
+        hash = 79 * hash + Objects.hashCode(this.telefones);
+        hash = 79 * hash + Objects.hashCode(this.emails);
         return hash;
     }
 
@@ -118,11 +126,7 @@ public class Cliente {
         }
         return true;
     }
-
     
     
     
 }
-
-
-

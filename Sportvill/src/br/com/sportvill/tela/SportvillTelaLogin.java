@@ -5,7 +5,7 @@
  */
 package br.com.sportvill.tela;
 import java.sql.*;
-import br.com.sportvill.BD.conexaoBD;
+import br.com.sportvill.repositorio.DataBase;
 
 import javax.swing.JOptionPane;
 
@@ -21,7 +21,7 @@ public class SportvillTelaLogin extends javax.swing.JFrame {
      * Creates new form SportvillTelaLogin
      */
     
-  conexaoBD con = new conexaoBD();
+  DataBase con = new DataBase();
     
     
     public SportvillTelaLogin() {
@@ -91,11 +91,11 @@ public class SportvillTelaLogin extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(120, 130, 90, 28);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/sportvill/tela/imagens/t2.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/sportvill/tela/imagens/Login.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, -10, 500, 519);
 
-        setSize(new java.awt.Dimension(511, 535));
+        setSize(new java.awt.Dimension(499, 526));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
